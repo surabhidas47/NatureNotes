@@ -13,12 +13,21 @@ public class JournalEntry {
     private String title;
     private String description;
     private Date date;
-    //need to figure out how to incoperate location
+    private String location;
+
     @Lob
     private byte [] image;
 
 
     public JournalEntry() {
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     public long getId() {
