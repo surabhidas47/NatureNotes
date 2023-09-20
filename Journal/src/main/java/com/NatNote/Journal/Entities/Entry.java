@@ -1,4 +1,4 @@
-package com.journal.nature_notes.Entity;
+package com.NatNote.Journal.Entities;
 
 import jakarta.persistence.*;
 

@@ -1,10 +1,10 @@
-package com.journal.nature_notes;
+package com.NatNote.Journal;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NatureNotesApplicationTests {
+class JournalApplicationTests {
 
 	@Test
 	void contextLoads() {
