@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.sql.Date;
 
 @Entity
-public class JournalEntry {
+public class Entry {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -19,7 +19,7 @@ public class JournalEntry {
     private byte [] image;
 
 
-    public JournalEntry() {
+    public Entry() {
     }
 
     public String getLocation() {

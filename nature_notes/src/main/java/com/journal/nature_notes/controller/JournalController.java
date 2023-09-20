@@ -1,19 +1,21 @@
 package com.journal.nature_notes.controller;
 
-import com.journal.nature_notes.Entity.JournalEntry;
-import org.springframework.web.bind.annotation.GetMapping;
+import com.journal.nature_notes.Entity.Entry;
+import com.journal.nature_notes.Service.JournalService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 @RestController
 public class JournalController {
 
+    @Autowired
+    private JournalService journalService;
 
-    @PostMapping
-    public void createEntry(@RequestBody JournalEntry entry){
+    @PostMapping ("/createEntry")
+    public Entry createEntry(@RequestBody Entry entry){
+        return journalService.createEntry(entry);
 
     }
 
